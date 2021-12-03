@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+.navbar {
+    background: #24252A;
+    padding: 16px 128px;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 22.4px;
+    font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+    color: #edf0f1;
+    font-size: 17px;
+    padding: 0 12.8px;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+    color: #0088a9;
+}
+
+#navbarSupportedContent > button {
+    background: #edf0f1;
+    font-weight: 600;
+    padding: 6.5px 22.5px;
+    border-radius: 30px;
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background: #0088a9;
+
+}
+
+.mid video {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mid .hero {
+    position: relative;
+    color: #edf0f1;
+    font-weight: 700;
+    
+}
+
+.mid .hero h2 {
+    font-weight: 750;
+}
+
+.mid .hero p{
+    width: 65%;
+    font-size: 19.5px;
+    letter-spacing: 0.2px;
+    padding-bottom: 15.5px;
+}
+
+.mid .hero a {
+    background: #24252A;
+    font-weight: 600;
+    padding: 9.5px 24.5px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.About {
+    background-color: #FFFFFF;
+}
+
+.About .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.About .text h2 {
+    color: #0088a9;
+    font-weight: bolder;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.About .text p {
+    color: #24252A;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+/* --------------------About2--------------------- */
+.About2 {
+    background-color: #FFFFFF;
+}
+
+.About2 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.About2 .text h2 {
+    color: #0088a9;
+    font-weight: bolder;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.About2 .text p {
+    color: #24252A;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+
+/* --------------------About3--------------------- */
+.About3 {
+    background-color: #FFFFFF;
+}
+
+.About3 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.About3 .text h2 {
+    color: #0088a9;
+    font-weight: bolder;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.About3 .text p {
+    color: #24252A;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+}
+
+.Domains {
+    background-color:grey;
+}
+
+
+.container {
+    margin-top: 12%;
+    display: flex;
+}
+
+.single-content {
+    border-radius: 30px;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 60px;
+    /* margin-left: 20px; */
+    margin-right: 40px; 
+}
+
+.single-content .text-content,
+.single-content:after {
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    
+}
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+.single-content:after {
+    content: '';
+    display: block;
+    background: #0088A9;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1, 1, 0, 10deg);
+    transition: 0.4s;
+}
+
+.single-content:hover:after{
+    opacity: 0.9;
+    transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.single-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: none;
+    transform: scale(1);
+    border-radius: 10px;
+
+}
+
+.text-content {
+    top: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    transition: 0.3s;
+    text-align: center;
+    color: #fff
+} 
+
+.text-content h4 {
+    font-family: big john;
+}
+
+.single-content:hover .text-content {
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: 0.3s;
+}
